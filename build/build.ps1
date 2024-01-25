@@ -115,6 +115,7 @@ Write-Host "Preparing to run build script..."
 
 if(!$PSScriptRoot){
     $PSScriptRoot = Split-Path $MyInvocation.MyCommand.Path -Parent
+    $PSScriptRoot = Split-Path $PSScriptRoot -Parent
 }
 
 if(!$Script){
