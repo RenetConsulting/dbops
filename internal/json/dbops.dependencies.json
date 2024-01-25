@@ -25,9 +25,9 @@
     "MySQL": [
         {
             "Name": "MySql.Data",
-            "RequiredVersion": "6.9.5",
+            "RequiredVersion": "6.10.9",
             "Path": [
-                "lib\\net45\\MySql.Data.dll"
+                "lib\\net452\\MySql.Data.dll"
             ],
             "PSEdition": [
                 "Desktop"
@@ -35,7 +35,7 @@
         },
         {
             "Name": "MySql.Data",
-            "MinimumVersion": "6.10.7",
+            "MinimumVersion": "6.10.9",
             "MaximumVersion": "8.0.31",
             "Path": [
                 "lib\\netstandard2.0\\MySql.Data.dll"
