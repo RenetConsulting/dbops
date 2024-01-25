@@ -113,10 +113,8 @@ function GetProxyEnabledWebClient
 
 Write-Host "Preparing to run build script..."
 
-if(!$PSScriptRoot){
-    $PSScriptRoot = Split-Path $MyInvocation.MyCommand.Path -Parent
-    $PSScriptRoot = Split-Path $PSScriptRoot -Parent
-}
+$PSScriptRoot = Split-Path $MyInvocation.MyCommand.Path -Parent
+$PSScriptRoot = Split-Path $PSScriptRoot -Parent
 
 if(!$Script){
     $Script = Join-Path $PSScriptRoot "build.cake"
